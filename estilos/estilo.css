@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+    font-family: "Inter", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #252525;
+    min-height: 100vh ;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+
+.h-full{
+    height: 100%;
+}
+
+.w-50{
+    width: 50%;
+    padding: 2%;
+}
+
+.h-50{
+    height: 50%;
+    /* padding: 2%; */
+}
+
+
+.flex{
+    display: flex;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.items-center{
+    align-items: center;
+}
+
+.box{
+    height: 33%;
+    background-color: #2D3543;
+    margin: 2% 0 2% 0;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.button{
+    height: 20vh;
+    width: 48%;
+    margin: 2% 0 2% 0;
+    background-color: #4C4D75;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.m-3-3{
+    margin: 2% 0 2% 0;
+}
+
+.graphs{
+    background-color: #40404A;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
