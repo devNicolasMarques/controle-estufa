@@ -1,0 +1,8 @@
+Body parser interpreta parâmetros enviados pelo front-end em um corpo de requisição
+
+três maneiras de enviar do front para o back: body, params, query 
+
+
+params = parametro da url
+query = http://localhost:8080/query/?numero=1234
+body = requisição por meio do corpo, seja postman ou o proprio html
