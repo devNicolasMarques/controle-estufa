@@ -31,17 +31,15 @@ class SensorController {
         }
     }
 
-    static async getLatest(req, res) {
+    static async sensorTest(req, res) {
+        const { nome, valor } = req.body
         try {
-            const [rows] = await pool.execute(
-                'SELECT * FROM sensors ORDER BY timestamp DESC LIMIT 1'
+            await pool.execute(
+                'INSERT INTO sensor (nome, valor) VALUES (?, ?)',
+                [nome, valor]
             );
 
-            if (rows.length === 0) {
-                return res.status(404).send({ message: "Nenhum dado encontrado" });
-            }
-
-            return res.status(200).json(rows[0]);
+            return res.status(200).json({response: `Sensor ${nome} cadastrado com sucesso!`});
         } catch (error) {
             return res.status(500).send({ error: error.message });
         }
